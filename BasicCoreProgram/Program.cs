@@ -11,7 +11,11 @@ namespace BasicCoreProgram
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to Basic Core Programs");
+
+            CoinFlipper flipper = new CoinFlipper();
+            CoinFlipper.FlipCoin(100); 
             Console.ReadLine();
+
         }
     }
 }
