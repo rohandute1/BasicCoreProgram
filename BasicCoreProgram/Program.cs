@@ -25,6 +25,10 @@ namespace BasicCoreProgram
             {
                 Console.WriteLine(year + " is not a leap year.");
             }
+
+            PowerOf2 table = new PowerOf2();
+            int N = 5;
+            PowerOf2.PrintPowerOfTwoTable(N);
             Console.ReadLine();
 
         }
