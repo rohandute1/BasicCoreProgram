@@ -12,7 +12,7 @@ namespace BasicCoreProgram
         {
             Console.WriteLine("Welcome to Basic Core Programs");
             Console.WriteLine("Please choose any one program.");
-            Console.WriteLine(" 1.Coin flipper\n 2.Leap year\n 3.Power of 2\n 4.Harmonic numbers\n 5.Prime factorization");
+            Console.WriteLine(" 1.Coin flipper\n 2.Leap year\n 3.Power of 2\n 4.Harmonic numbers\n 5.Prime factorization\n 6.Q & R Calculator");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -55,6 +55,18 @@ namespace BasicCoreProgram
                     int x = Convert.ToInt32(Console.ReadLine());
                     PrimeFactorization.FindPrimeFactors(x);
                     break;
+
+                case 6:
+                    Console.WriteLine("Pleaae enter Dividend");
+                    int dividend = Convert.ToInt32(Console.ReadLine());
+                    Console.WriteLine("Please enter Divisor");
+                    int divisor = Convert.ToInt32(Console.ReadLine());
+                    int quotient, remainder;
+                    Quotient_RemainderCalculator calculator = new Quotient_RemainderCalculator();
+                    Quotient_RemainderCalculator.ComputeQuotientAndRemaider(dividend, divisor, out quotient, out remainder);
+                    Console.WriteLine("Quotient: " + quotient);
+                    Console.WriteLine("Remainder: " + remainder);
+                    break; 
             }
             Console.ReadLine();
         } 
