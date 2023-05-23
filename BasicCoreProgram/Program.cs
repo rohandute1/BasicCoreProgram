@@ -12,7 +12,7 @@ namespace BasicCoreProgram
         {
             Console.WriteLine("Welcome to Basic Core Programs");
             Console.WriteLine("Please choose any one program.");
-            Console.WriteLine(" 1.Coin flipper\n 2.Leap year\n 3.Power of 2\n 4.Harmonic numbers\n 5.Prime factorization\n 6.Q & R Calculator\n 7.Number Swapper\n 8.Even Odd Checker");
+            Console.WriteLine(" 1.Coin flipper\n 2.Leap year\n 3.Power of 2\n 4.Harmonic numbers\n 5.Prime factorization\n 6.Q & R Calculator\n 7.Number Swapper\n 8.Even Odd Checker\n 9.Vowel Consonant Checker");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -94,6 +94,21 @@ namespace BasicCoreProgram
                     else 
                     {
                         Console.WriteLine(number + " is odd.");
+                    }
+                    break;
+
+                case 9:
+                    VowelConsonantChecker check = new VowelConsonantChecker();
+                    Console.WriteLine("Please enter any Alphabet to check it is Vowel or Consonant:");
+                    char alphabet = Convert.ToChar(Console.ReadLine());
+
+                    if (check.Equals(alphabet)) 
+                    {
+                        Console.WriteLine(alphabet + " is a vowel.");
+                    }
+                    else 
+                    {
+                        Console.WriteLine(alphabet + " is a consonant.");
                     }
                     break;
             }
