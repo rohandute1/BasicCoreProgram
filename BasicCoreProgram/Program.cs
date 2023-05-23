@@ -29,7 +29,13 @@ namespace BasicCoreProgram
             PowerOf2 table = new PowerOf2();
             int N = 5;
             PowerOf2.PrintPowerOfTwoTable(N);
+             
+            HarmonicNumbers harmonic = new HarmonicNumbers();
+            int X = 10;
+            double result = HarmonicNumbers.CalculateHarmonicNumber(X);
+            Console.WriteLine("Nth Harmonic Value: " + result);
             Console.ReadLine();
+
 
         }
     }
