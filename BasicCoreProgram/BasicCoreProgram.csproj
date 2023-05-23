@@ -46,6 +46,7 @@
     <Compile Include="CoinFlipper.cs" />
     <Compile Include="EvenOrOddChecker.cs" />
     <Compile Include="HarmonicNumbers.cs" />
+    <Compile Include="LargestNumberFinder.cs" />
     <Compile Include="LeapYear.cs" />
     <Compile Include="PowerOf2.cs" />
     <Compile Include="PrimeFactorization.cs" />

@@ -12,7 +12,7 @@ namespace BasicCoreProgram
         {
             Console.WriteLine("Welcome to Basic Core Programs");
             Console.WriteLine("Please choose any one program.");
-            Console.WriteLine(" 1.Coin flipper\n 2.Leap year\n 3.Power of 2\n 4.Harmonic numbers\n 5.Prime factorization\n 6.Q & R Calculator\n 7.Number Swapper\n 8.Even Odd Checker\n 9.Vowel Consonant Checker");
+            Console.WriteLine(" 1.Coin flipper\n 2.Leap year\n 3.Power of 2\n 4.Harmonic numbers\n 5.Prime factorization\n 6.Q & R Calculator\n 7.Number Swapper\n 8.Even Odd Checker\n 9.Vowel Consonant Checker\n 10.Find largest among three numbers");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -110,6 +110,19 @@ namespace BasicCoreProgram
                     {
                         Console.WriteLine(alphabet + " is a consonant.");
                     }
+                    break;
+
+                    case 10:
+                    LargestNumberFinder finder = new LargestNumberFinder();
+                    Console.WriteLine("Please enter first number");
+                    int first = Convert.ToInt32(Console.ReadLine());
+                    Console.WriteLine("Please enter second number");
+                    int second = Convert.ToInt32(Console.ReadLine());
+                    Console.WriteLine("Please enter third number");
+                    int third = Convert.ToInt32(Console.ReadLine());
+
+                    int largestNumber = LargestNumberFinder.FindLargestNumber(first, second, third);
+                    Console.WriteLine("The largest number among " + first + ", " + second + ", and " + third + " is: " + largestNumber);
                     break;
             }
             Console.ReadLine();
