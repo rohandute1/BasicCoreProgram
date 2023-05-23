@@ -12,7 +12,7 @@ namespace BasicCoreProgram
         {
             Console.WriteLine("Welcome to Basic Core Programs");
             Console.WriteLine("Please choose any one program.");
-            Console.WriteLine(" 1.Coin flipper\n 2.Leap year\n 3.Power of 2\n 4.Harmonic numbers\n 5.Prime factorization\n 6.Q & R Calculator");
+            Console.WriteLine(" 1.Coin flipper\n 2.Leap year\n 3.Power of 2\n 4.Harmonic numbers\n 5.Prime factorization\n 6.Q & R Calculator\n 7.Number Swapper");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -67,6 +67,21 @@ namespace BasicCoreProgram
                     Console.WriteLine("Quotient: " + quotient);
                     Console.WriteLine("Remainder: " + remainder);
                     break; 
+
+                case 7:
+                    Console.WriteLine("Please enter first number:");
+                    int numb1 = Convert.ToInt32(Console.ReadLine());
+                    Console.WriteLine("Please enter second number:");
+                    int numb2 = Convert.ToInt32(Console.ReadLine());
+                    SwapNumbers swap = new SwapNumbers();
+                    Console.WriteLine("Before swapping:");
+                    Console.WriteLine("Number 1: " + numb1);
+                    Console.WriteLine("Number 1: " + numb2);
+                    SwapNumbers.NumberSwapper(ref numb1, ref numb2);
+                    Console.WriteLine("After swapping:");
+                    Console.WriteLine("Number 1: " + numb1);
+                    Console.WriteLine("Number 1: " + numb2);
+                    break;
             }
             Console.ReadLine();
         } 
