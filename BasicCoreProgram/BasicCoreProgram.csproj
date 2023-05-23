@@ -47,6 +47,7 @@
     <Compile Include="HarmonicNumbers.cs" />
     <Compile Include="LeapYear.cs" />
     <Compile Include="PowerOf2.cs" />
+    <Compile Include="PrimeFactorization.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
