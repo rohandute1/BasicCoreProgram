@@ -12,7 +12,7 @@ namespace BasicCoreProgram
         {
             Console.WriteLine("Welcome to Basic Core Programs");
             Console.WriteLine("Please choose any one program.");
-            Console.WriteLine(" 1.Coin flipper\n 2.Leap year\n 3.Power of 2\n 4.Harmonic numbers\n 5.Prime factorization\n 6.Q & R Calculator\n 7.Number Swapper");
+            Console.WriteLine(" 1.Coin flipper\n 2.Leap year\n 3.Power of 2\n 4.Harmonic numbers\n 5.Prime factorization\n 6.Q & R Calculator\n 7.Number Swapper\n 8.Even Odd Checker");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -81,6 +81,20 @@ namespace BasicCoreProgram
                     Console.WriteLine("After swapping:");
                     Console.WriteLine("Number 1: " + numb1);
                     Console.WriteLine("Number 1: " + numb2);
+                    break;
+
+                case 8:
+                    EvenOrOddChecker checker1 = new EvenOrOddChecker();
+                    Console.WriteLine("Please enter any number to check weather it is even or odd:");
+                    int number = Convert.ToInt32(Console.ReadLine());
+                    if (checker1.Equals(number)) 
+                    {
+                        Console.WriteLine(number + " is even.");
+                    }
+                    else 
+                    {
+                        Console.WriteLine(number + " is odd.");
+                    }
                     break;
             }
             Console.ReadLine();
