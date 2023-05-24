@@ -17,12 +17,10 @@ namespace BasicCoreProgram
             switch (option)
             {
                 case 1:
-                    CoinFlipper flipper = new CoinFlipper();
                     CoinFlipper.FlipCoin(100);
                     break;
                 case 2:
                     Console.WriteLine("Please enter the year:");
-                    LeapYear checker = new LeapYear();
                     int year = Convert.ToInt32(Console.ReadLine()); //Example: Year to check
                     if (LeapYear.IsLeapYear(year))
                     {
@@ -36,14 +34,12 @@ namespace BasicCoreProgram
 
                 case 3:
                     Console.WriteLine("Please enter the number:");
-                    PowerOf2 table = new PowerOf2();
                     int N = Convert.ToInt32(Console.ReadLine());
                     PowerOf2.PrintPowerOfTwoTable(N);
                     break;
 
                 case 4:
                     Console.WriteLine("Please enter the number:");
-                    HarmonicNumbers harmonic = new HarmonicNumbers();
                     int X = Convert.ToInt32(Console.ReadLine());
                     double result = HarmonicNumbers.CalculateHarmonicNumber(X);
                     Console.WriteLine("Nth Harmonic Value: " + result);
@@ -51,7 +47,6 @@ namespace BasicCoreProgram
 
                 case 5:
                     Console.WriteLine("Please enter the number:");
-                    PrimeFactorization factorization = new PrimeFactorization();
                     int x = Convert.ToInt32(Console.ReadLine());
                     PrimeFactorization.FindPrimeFactors(x);
                     break;
@@ -62,7 +57,6 @@ namespace BasicCoreProgram
                     Console.WriteLine("Please enter Divisor");
                     int divisor = Convert.ToInt32(Console.ReadLine());
                     int quotient, remainder;
-                    Quotient_RemainderCalculator calculator = new Quotient_RemainderCalculator();
                     Quotient_RemainderCalculator.ComputeQuotientAndRemaider(dividend, divisor, out quotient, out remainder);
                     Console.WriteLine("Quotient: " + quotient);
                     Console.WriteLine("Remainder: " + remainder);
@@ -73,7 +67,6 @@ namespace BasicCoreProgram
                     int numb1 = Convert.ToInt32(Console.ReadLine());
                     Console.WriteLine("Please enter second number:");
                     int numb2 = Convert.ToInt32(Console.ReadLine());
-                    SwapNumbers swap = new SwapNumbers();
                     Console.WriteLine("Before swapping:");
                     Console.WriteLine("Number 1: " + numb1);
                     Console.WriteLine("Number 1: " + numb2);

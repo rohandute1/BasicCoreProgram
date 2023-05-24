@@ -8,7 +8,7 @@ namespace BasicCoreProgram
 {
     internal class EvenOrOddChecker
     {
-        public static bool IsEven(int number) 
+        public bool IsEven(int number) 
         {
         return number % 2 == 0;
         } 

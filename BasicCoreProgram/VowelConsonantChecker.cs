@@ -8,7 +8,7 @@ namespace BasicCoreProgram
 {
     internal class VowelConsonantChecker
     {
-        public static bool IsVowel(char alphabet) 
+        public bool IsVowel(char alphabet) 
         {
             char lowerAlphabet = char.ToLower(alphabet);
             return lowerAlphabet == 'a' || lowerAlphabet == 'e' || lowerAlphabet == 'i' || lowerAlphabet == 'o' || lowerAlphabet == 'u';
