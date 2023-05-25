@@ -22,8 +22,8 @@ namespace BasicCoreProgram
 
             for (int i = 0; i < numFlips; i++)
             {
-                double randomValue = random.NextDouble();
-                if (randomValue < 0.5)
+                int randomValue = random.Next(1, 3);
+                if (randomValue == 1)
                     headsCount++;
                 else
                     tailsCount++;
